@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>260</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Bird
+--
++ x : int
++ y : int
++ color : Color
++ radius : float
++ a : float
++ b : float
++ state : bool
+--
++ draw() : void
++ jump(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>430</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Column
+--
++ x : int
++ y : int
++ width : int
++ height : int
+--
++ draw() : void
++ drawTopColumn() : void
++ drawUnderColumn(): void
++ movement() : void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>260</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Clouds
+--
++ x : int
++ y : int
++ radiusH : float
++ radiusV : float
++ color : Color
+--
++ draw() : void
++ movement() : void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>240</y>
+      <w>570</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Rules
+--
+
+
+--
++ CheckPositionOnScreen(yBird : int, radiusBird : float, screenheight : int) : bool
++ CheckCollision(xBird : int, yBird : int, xColum : int, yColum : int, HeightColum : int) : bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
